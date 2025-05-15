@@ -11,4 +11,10 @@ bill= 36.99
 Amount= 100
 tips= 6.66
 
-print(bill)
+bill_amount= float(input("enter the amount of the bill: "))
+
+tip_percentage = int(input("emter the percentage of tip: "))
+
+tip_amount = (bill_amount * tip_percentage)/100
+
+print(f"Tip: $ {tip_amount: .2f}")
